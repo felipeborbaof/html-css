@@ -9,10 +9,26 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
+
+        caption {
+            background-color: lightgrey;
+            font-size: 1.4rem;
+            font-weight: bolder;
+            padding: 10px;
+        }
+
         table{
             width: 400px;
             border-collapse: collapse;
-            
+            position: relative;
+        }
+
+        tbody > tr:nth-child(odd) { /* 2n-1 */
+            background-color: rgb(204, 200, 200);
+        }
+
+        tbody > tr:nth-child(even) { /* 2n */
+            background-color: rgba(204, 200, 200, 0.397);
         }
 
         td, th {
@@ -23,6 +39,12 @@
         thead {
             background-color: grey;
             color: white;
+        }
+
+        thead > tr > th {
+            position:sticky;
+            top: -1px;
+            background-color: grey;
         }
 
         tfoot{
@@ -40,6 +62,7 @@
     <!-- 
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -49,10 +72,11 @@
     -->
 
     <table>
+        <caption>População da Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -167,10 +191,19 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td><strong>215 851 765</strong></td>
             </tr>
         </tfoot>
     </table>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus veritatis sapiente nisi nam, minus animi modi, perferendis beatae hic maiores, labore facilis quod quidem doloribus dicta magnam accusamus? Cupiditate, enim!</p>
+    <p>Id quisquam harum velit fugiat numquam. Fugit corporis velit, molestiae quasi sint illum, obcaecati delectus ipsum sapiente error quisquam molestias adipisci ex cum maiores excepturi omnis cumque veniam dolorem eligendi?</p>
+    <p>Dolore illum itaque laboriosam error accusantium quo quos hic repudiandae sed vel nesciunt quaerat facere, voluptatibus eum adipisci qui ad maiores sit ipsa. Minus eum delectus nobis hic ab quidem!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum animi nostrum odio voluptate culpa ut aut voluptatem qui necessitatibus doloremque commodi saepe laudantium blanditiis eaque, distinctio id? Dolor, quas dignissimos.</p>
+    <p>Impedit quas eaque atque? Maiores, ex distinctio voluptatem ducimus explicabo facilis doloremque illum nihil illo, aut magni esse non iure excepturi in accusantium dolorum inventore debitis, porro velit blanditiis aliquid!</p>
+    <p>Est, qui deleniti! Facilis temporibus unde earum enim iusto odio aliquid, ea repudiandae neque debitis, voluptatibus incidunt animi exercitationem dignissimos at vitae maxime optio eos laboriosam quia iste? Suscipit, repellendus!</p>
+    <p>Earum quibusdam corrupti fugit quaerat animi tenetur qui. Officiis aliquid iusto repudiandae provident quaerat at voluptas deleniti vitae laudantium consectetur, earum, natus magni alias id quis hic perferendis cupiditate molestias!</p>
+    <p>Corrupti, ipsam tempore nisi dolore pariatur facilis earum minima beatae quibusdam. Esse consequatur sunt non consectetur eaque molestias, accusantium numquam ducimus error nostrum quibusdam? Nihil repellendus praesentium qui laudantium hic?</p>
 </body>
 </html> 
